@@ -142,24 +142,22 @@
     </div>
 
     <script>
-        // Updates the slider number dynamically
         function updateAmount(val) {
             document.getElementById('amount-val').innerText = Number(val).toLocaleString();
         }
 
-        // Switches from Slider to Login page
         function goToStep2() {
             document.getElementById('step-1').style.display = 'none';
             document.getElementById('step-2').style.display = 'inline-block';
         }
 
-        // Activates the surprise screen
         function triggerTrap() {
             const overlay = document.getElementById('trap-overlay');
             overlay.style.display = 'flex';
 
             const video = document.getElementById('rick-video');
-            video.src = "https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1";
+            // Updated video ID to BoonMoon's Roblox Recreation
+            video.src = "https://www.youtube.com/embed/3HtCQCFk1W0?autoplay=1";
         }
     </script>
 
